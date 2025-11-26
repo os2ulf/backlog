@@ -4,6 +4,7 @@ title: "[Feature]: "
 labels:
   - Feature request
 assignees: []
+type: Feature
 body:
   - type: markdown
     attributes:
