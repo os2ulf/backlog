@@ -1,0 +1,86 @@
+name: "Bug report"
+description: "Report a bug to help us improve the product"
+title: "[Bug]: "
+labels:
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.  
+        Please fill out the details below as precisely as possible.
+
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Short description of the bug.
+      placeholder: Button X does not respond on save
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Environment where the bug occurs (prod, test, staging, local, etc.).
+      placeholder: Production – tenant X – municipality Y
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: What happened?
+      description: Describe the actual behaviour.
+      placeholder: When I do ..., the system ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should have happened?
+      description: Describe the expected behaviour.
+      placeholder: I expected the system to ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps_to_reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Step-by-step instructions to reproduce the issue.
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. Observe ...
+      render: markdown
+    validations:
+      required: true
+
+  - type: input
+    id: link
+    attributes:
+      label: Link to where we can see the problem
+      description: URL or reference where the problem can be observed.
+      placeholder: https://example.com/path/to/page
+
+  - type: input
+    id: device_browser
+    attributes:
+      label: Device and browser
+      description: OS, device type and browser (incl. version).
+      placeholder: Windows 11, Chrome 129
+
+  - type: attachments
+    id: attachments
+    attributes:
+      label: Attachments
+      description: Add screenshots, videos or log files that help understand the issue.
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Any additional context, observations or related issues.
