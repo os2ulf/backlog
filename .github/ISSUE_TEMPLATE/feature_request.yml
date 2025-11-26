@@ -1,0 +1,109 @@
+name: "Feature request"
+description: "Suggest a new feature or enhancement"
+title: "[Feature]: "
+labels:
+  - enhancement
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please describe the feature request as clearly as possible.  
+        Focus on the *why* and the *what* – not only the technical solution.
+
+  - type: textarea
+    id: background
+    attributes:
+      label: Background
+      description: Why are we doing this? (User story, business driver, enablement.)
+      placeholder: |
+        As a [role] I want [capability] so that [business value] ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: Acceptance Criteria
+      description: Clear and precise criteria for when this is considered done.
+      placeholder: |
+        - [ ] User can ...
+        - [ ] Data is stored ...
+        - [ ] Error handling covers ...
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: assumptions
+    attributes:
+      label: Assumptions / Prerequisites
+      description: Underlying assumptions and necessary prerequisites for the solution.
+      placeholder: |
+        - Existing integration to ...
+        - Access to ...
+        - Feature X is already in place.
+
+  - type: textarea
+    id: implementation_breakdown
+    attributes:
+      label: Implementation Breakdown
+      description: High-level description of how you suggest solving this issue.
+      placeholder: |
+        1. Extend API ...
+        2. Add UI component ...
+        3. Update documentation ...
+
+  - type: textarea
+    id: test_description
+    attributes:
+      label: Test Description
+      description: Actions to perform to validate completion based on the acceptance criteria.
+      placeholder: |
+        - Navigate to ...
+        - Perform ...
+        - Verify that ...
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks and Risk Assessment
+      description: Significant risks or unknowns that could impact delivery.
+      placeholder: |
+        - Dependency on ...
+        - Performance impact on ...
+        - Legal / compliance considerations ...
+
+  - type: textarea
+    id: not_included
+    attributes:
+      label: Not included
+      description: Functionality that might be assumed included, but is explicitly out of scope.
+      placeholder: |
+        - Does NOT include ...
+        - Out of scope: ...
+
+  - type: textarea
+    id: design
+    attributes:
+      label: Design
+      description: Links to screens, wireframes or other design assets.
+      placeholder: |
+        - Figma: ...
+        - Screenshots: ...
+
+  - type: textarea
+    id: data_foundation
+    attributes:
+      label: Data foundation
+      description: Documentation for data exchange or data needed for development (PDF/XML/links).
+      placeholder: |
+        - API documentation: ...
+        - Data model: ...
+        - Example payloads: ...
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Additional comments, context or clarifications.
