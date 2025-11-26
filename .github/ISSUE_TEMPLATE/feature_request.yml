@@ -5,6 +5,7 @@ labels:
   - Feature request
 assignees: []
 type: Feature
+projects: ["os2ulf/1"]
 body:
   - type: markdown
     attributes:
