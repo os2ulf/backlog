@@ -73,12 +73,16 @@ body:
       label: Device and browser
       description: OS, device type and browser (incl. version).
       placeholder: Windows 11, Chrome 129
-
-  - type: attachments
+  
+  - type: textarea
     id: attachments
     attributes:
       label: Attachments
-      description: Add screenshots, videos or log files that help understand the issue.
+      description: Describe or link to screenshots, videos or log files that help understand the issue.
+      placeholder: |
+        - Screenshot: ...
+        - Log file: ...
+        - Screen recording: ...
 
   - type: textarea
     id: notes
