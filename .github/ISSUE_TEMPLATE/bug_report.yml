@@ -5,6 +5,7 @@ labels:
  - Bug report
 assignees: []
 type: Bug
+projects: ["os2ulf/1"]
 body:
   - type: markdown
     attributes:
